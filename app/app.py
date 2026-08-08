@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
+from pathlib import Path
 
 st.sidebar.title("📊 Dashbaord")
 
@@ -38,7 +39,11 @@ Scikit-Learn
 NumPy
 """)
 
-model=joblib.load(r"C:\Users\DELL\OneDrive\Documents\ML-Projects\house_price_prediction\models\xgboost_model.pkl")
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+model_path = BASE_DIR / "models" / "xgboost_model.pkl"
+
+model=joblib.load(model_path)
 
 st.title("🌴🏠🌴 California House Price Prediction")
 st.divider()
