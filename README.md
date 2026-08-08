@@ -1,5 +1,7 @@
 # 🌴🏡 California House Price Prediction
 
+🚀 **[Live Demo — California House Price Estimator](https://california-house-price-estimate.streamlit.app/)**
+
 An end-to-end Machine Learning project that predicts the median house price of California districts using an XGBoost regression model.
 
 The project includes exploratory data analysis (EDA), model comparison, feature importance analysis, and an interactive Streamlit web application for real-time predictions.
