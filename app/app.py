@@ -42,6 +42,7 @@ NumPy
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 model_path = BASE_DIR / "models" / "xgboost_model.pkl"
+image_path = BASE_DIR / "images" / "feature_importance.png"
 
 model=joblib.load(model_path)
 
@@ -133,7 +134,7 @@ Higher importance indicates a greater influence on the model's predictions.
 """)
 
         st.image(
-           r"C:\Users\DELL\OneDrive\Documents\ML-Projects\house_price_prediction\images\feature_importance.png",
+            image_path,
             caption="Feature Importance of the XGBoost Model",
             use_container_width=True
         )
